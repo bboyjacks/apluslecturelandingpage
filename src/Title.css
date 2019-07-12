@@ -1,37 +1,71 @@
-.title-container {
-	position: absolute;
-}
-
 .title {
 	color: white;
-	font-size: 70px;
 }
 
 .sub-title {
 	color: #F7F7F7;
-	font-size: 35px;
 }
 
 .email-sign-up {
-	height: 40px;
+	height: 30px;
 	border-radius: 10px;
-	width: 300px;
+	width: 200px;
 	border: 1px solid white;
 	background: #7BA062;
 	padding-left: 10px;
+	color: white;
+	outline: none;
+	font-size: 20px;
 }
 
 .email-sign-up::placeholder {
 	color: white;
-	font-size: 15px;
 }
 
 .submit-button {
 	background: #539624;
 	margin-left: 10px;
-	height: 40px;
+	height: 30px;
 	color: white;
 	font-size: 18px;
 	width: 150px;
 	border-radius: 10px;
+}
+
+
+@media screen and (min-width: 834px) {
+
+	.title {
+		color: white;
+		font-size: 70px;
+	}
+
+	.sub-title {
+		color: #F7F7F7;
+		font-size: 35px;
+	}
+
+	.email-sign-up {
+		height: 40px;
+		border-radius: 10px;
+		width: 300px;
+		border: 1px solid white;
+		background: #7BA062;
+		padding-left: 10px;
+	}
+
+	.email-sign-up::placeholder {
+		color: white;
+		font-size: 15px;
+	}
+
+	.submit-button {
+		background: #539624;
+		margin-left: 10px;
+		height: 40px;
+		color: white;
+		font-size: 18px;
+		width: 150px;
+		border-radius: 10px;
+	}
 }

@@ -1,0 +1,185 @@
+@mixin baseApp {
+	.top-half {
+		display: flex;
+	}
+	
+	.side-ways-rect {
+		position: absolute;
+		width: 300%;
+		height: 1000px;
+		background: #87BC62;
+		transform: translate(-400px, -400px) rotate(-15deg);
+		z-index: -1;
+	}
+	
+	.title-container {
+		margin-bottom: 30px;
+	}
+	
+	.top-half {
+		flex-direction: column;
+		align-content: space-around;
+		align-items: center;
+	}
+	
+	.app-preview-img {
+		position: relative;
+		width:  375px;
+		height: 460px;
+	}
+	
+	.tutor-profile {
+		position: absolute;
+		right: 0;
+		top: 0;
+		box-shadow: -1px 2px 8px grey;
+		width: 200px;
+	}
+	
+	.list-of-tutors {
+		position: absolute;
+		right: 175px;
+		top: 100px;
+		box-shadow: -1px 2px 8px grey;
+		width: 200px;
+	}
+
+	.bottom-half {
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		img {
+			width: 200px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		.step-1 {
+			margin-top: 40px;
+		}
+
+		.step-1, .step-3 {
+			img {
+				box-shadow: -1px 2px 8px grey;
+			}
+		}
+
+		& > div {
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			align-content: space-around;
+			margin-bottom: 40px;
+
+			.image {
+				width: 500px;
+				height: 500px;
+				position: relative;
+
+				.image-1 {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					z-index: 2;
+					box-shadow: -1px 2px 8px grey;
+				}
+
+				.image-2 {
+					position: absolute;
+					top: 0;
+					right: 0;
+					z-index: 1;
+					box-shadow: -1px 2px 8px grey;
+
+				}
+			}
+		}
+	}
+}
+
+.App {
+	position: relative;
+	padding: 50px;
+
+	@include baseApp();
+
+	@media screen and (min-width: 834px) {
+		.side-ways-rect {
+			width: 150%;
+			transform: translate(-400px, -200px) rotate(-15deg);
+		}
+
+		.app-preview-img {
+			width:  672px;
+			height: 770px;
+		}
+
+		.tutor-profile {
+			width: 371px;
+		}
+
+		.list-of-tutors {
+			width: 371px;
+			right: 300px;
+		}
+
+		.bottom-half {	
+
+			p {
+				font-size: 24px;
+			}
+
+			img {
+				width: 371px;
+			}
+			
+			& > div {
+				flex-direction: column;
+				margin-bottom: 80px;
+
+				.image {
+					width: 500px;
+					height: 850px;
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 1320px) {
+		.side-ways-rect {
+			width: 150%;
+			transform: translate(-400px, -700px) rotate(-15deg);
+		}
+
+		.top-half {
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: initial;
+		}
+
+		.app-preview-img {
+			width:  672px;
+			height: 770px;
+		}
+
+		.tutor-profile {
+			width: 371px;
+		}
+
+		.list-of-tutors {
+			width: 371px;
+			right: 300px;
+		}
+
+		.bottom-half {
+			& > div {
+				flex-direction: row;
+			}
+		}
+	}
+}

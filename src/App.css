@@ -1,32 +1,203 @@
 .App {
   position: relative;
-  padding: 100px;
+  padding: 50px;
 }
 
-.top-half {
-  height: 800px;
+.App .top-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.side-ways-rect {
+.App .side-ways-rect {
   position: absolute;
-  width: 150%;
-  height: 600px;
+  width: 300%;
+  height: 1000px;
   background: #87BC62;
-  transform: translate(-400px, -300px) rotate(-15deg);
+  -webkit-transform: translate(-400px, -400px) rotate(-15deg);
+          transform: translate(-400px, -400px) rotate(-15deg);
   z-index: -1;
 }
 
-.tutor-profile {
-  position: absolute;
-  right: 100px;
-  box-shadow: -1px 2px 8px #555555;
-  z-index: 2;
+.App .title-container {
+  margin-bottom: 30px;
 }
 
-.list-of-tutors {
-  position: absolute;
-  top: 150px;
-  right: 330px;
-  box-shadow: -1px 2px 8px #555555;
-  z-index: 2;
+.App .top-half {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+.App .app-preview-img {
+  position: relative;
+  width: 375px;
+  height: 460px;
+}
+
+.App .tutor-profile {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-box-shadow: -1px 2px 8px grey;
+          box-shadow: -1px 2px 8px grey;
+  width: 200px;
+}
+
+.App .list-of-tutors {
+  position: absolute;
+  right: 175px;
+  top: 100px;
+  -webkit-box-shadow: -1px 2px 8px grey;
+          box-shadow: -1px 2px 8px grey;
+  width: 200px;
+}
+
+.App .bottom-half {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .bottom-half img {
+  width: 200px;
+}
+
+.App .bottom-half p {
+  font-size: 16px;
+}
+
+.App .bottom-half .step-1 {
+  margin-top: 40px;
+}
+
+.App .bottom-half .step-1 img, .App .bottom-half .step-3 img {
+  -webkit-box-shadow: -1px 2px 8px grey;
+          box-shadow: -1px 2px 8px grey;
+}
+
+.App .bottom-half > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  margin-bottom: 40px;
+}
+
+.App .bottom-half > div .image {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.App .bottom-half > div .image .image-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-box-shadow: -1px 2px 8px grey;
+          box-shadow: -1px 2px 8px grey;
+}
+
+.App .bottom-half > div .image .image-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-box-shadow: -1px 2px 8px grey;
+          box-shadow: -1px 2px 8px grey;
+}
+
+@media screen and (min-width: 834px) {
+  .App .side-ways-rect {
+    width: 150%;
+    -webkit-transform: translate(-400px, -200px) rotate(-15deg);
+            transform: translate(-400px, -200px) rotate(-15deg);
+  }
+  .App .app-preview-img {
+    width: 672px;
+    height: 770px;
+  }
+  .App .tutor-profile {
+    width: 371px;
+  }
+  .App .list-of-tutors {
+    width: 371px;
+    right: 300px;
+  }
+  .App .bottom-half p {
+    font-size: 24px;
+  }
+  .App .bottom-half img {
+    width: 371px;
+  }
+  .App .bottom-half > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .App .bottom-half > div .image {
+    width: 500px;
+    height: 850px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .App .side-ways-rect {
+    width: 150%;
+    -webkit-transform: translate(-400px, -700px) rotate(-15deg);
+            transform: translate(-400px, -700px) rotate(-15deg);
+  }
+  .App .top-half {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .App .app-preview-img {
+    width: 672px;
+    height: 770px;
+  }
+  .App .tutor-profile {
+    width: 371px;
+  }
+  .App .list-of-tutors {
+    width: 371px;
+    right: 300px;
+  }
+  .App .bottom-half > div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=App.css.map */

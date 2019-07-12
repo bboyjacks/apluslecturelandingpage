@@ -1,0 +1,141 @@
+.App {
+  position: relative;
+  padding: 50px;
+}
+
+.top-half {
+  display: flex;
+}
+
+.side-ways-rect {
+  position: absolute;
+  width: 300%;
+  height: 1000px;
+  background: #87BC62;
+  transform: translate(-400px, -400px) rotate(-15deg);
+  z-index: -1;
+}
+
+.title-container {
+  margin-bottom: 30px;
+}
+
+.top-half {
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+}
+
+.app-preview-img {
+  position: relative;
+  width:  375px;
+  height: 460px;
+}
+
+.tutor-profile {
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-shadow: -1px 2px 8px grey;
+  width: 200px;
+}
+
+.list-of-tutors {
+  position: absolute;
+  right: 175px;
+  top: 100px;
+  box-shadow: -1px 2px 8px grey;
+  width: 200px;
+}
+
+@media screen and (min-width: 834px) {
+
+  .side-ways-rect {
+    position: absolute;
+    width: 150%;
+    height: 1000px;
+    background: #87BC62;
+    transform: translate(-400px, -200px) rotate(-15deg);
+    z-index: -1;
+  }
+  
+
+  .title-container {
+    margin-bottom: 30px;
+  }
+
+  .top-half {
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+  }
+
+  .app-preview-img {
+    position: relative;
+    width:  672px;
+    height: 770px;
+  }
+  
+  .tutor-profile {
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: -1px 2px 8px grey;
+    width: 371px;
+  }
+  
+  .list-of-tutors {
+    position: absolute;
+    right: 300px;
+    top: 100px;
+    box-shadow: -1px 2px 8px grey;
+    width: 371px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+
+  .side-ways-rect {
+    position: absolute;
+    width: 150%;
+    height: 1000px;
+    background: #87BC62;
+    transform: translate(-400px, -700px) rotate(-15deg);
+    z-index: -1;
+  }
+  
+
+  .title-container {
+    margin-bottom: 30px;
+  }
+
+  .top-half {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: initial;
+  }
+
+  .app-preview-img {
+    position: relative;
+    width:  672px;
+    height: 770px;
+  }
+  
+  .tutor-profile {
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: -1px 2px 8px grey;
+    width: 371px;
+  }
+  
+  .list-of-tutors {
+    position: absolute;
+    right: 300px;
+    top: 100px;
+    box-shadow: -1px 2px 8px grey;
+    width: 371px;
+  }
+}
+
+
