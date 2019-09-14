@@ -44,7 +44,6 @@ function App() {
           <img alt="pay" src="https://lh3.googleusercontent.com/UYHcC-swoPDhGxcau9zRYJQZ7Edoud-tZyXKXviLntSpVTWiU_Kmvn08sh_lSPM6FaGLRjtLFJ8aCCAZrMwuD7Ju6Q16GCFyg4VlcLyGxoFx4TYsumq3WJceUCEfahtZR8FQMnaQlOOg1o4heO1EKwNZIlwR-h94KGl01aO_r0dKC9Zmo6xd_6dosB9MtpSnxEaw6uq2b-_21dnSzLLaCHFxYgnPLbEA7iP3rQQD26j2ACrhO6qqXQyJZ7-cn1IMEGz0DfR7bPz8JkhMJ8gAx59uVGYZgpRoAArwV_lTetNgRcCcWCI8JxBgrB2UWJI_DMyrZgt1w6Lvou4LgkUQvrz7euie3iTdo59zVVa7ksJYbNt6roiFcthO0fgtxoka8vH_Qp2fJWWBJWjOGzZJVKa5NUA9NNQ4AaeobdJzBqvjENXCn3PuMLbhuUPgC4U0Rtaw04p5j_fHDkf9DhsxJn1ZrPVFtYnxgXJdHNRoH2D8j0zu0_z6CQxW4TTAWNaISugw-x4oypdEbF6V7XM08QKKqL7-OEwOe0ZR5_hUfoO1BzqCevIr8umnt0vWuwbkEoFeRpiFoYuwsvG_ocqEjvu9TiUoAZRqkFW3BPJ3tyx5d9tR8ezTrP8r1S4Tej0im9V3Ky_wRQlgYUoPUq-BGHsgQqc9Cg=w375-h667-no"></img>
         </div>
       </div>
-      
     </div>
   );
 }

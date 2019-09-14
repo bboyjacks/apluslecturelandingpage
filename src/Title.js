@@ -67,7 +67,7 @@ function Title() {
 				<div style={modalMessageColor}>{modalMessage}</div>
 				<button className="btn-close" onClick={handleCloseModal}>close</button>
 			</div>
-			<h1 className="title">A Plus Lecture</h1>
+			<h1 className="title">A Plus Tutor</h1>
 			<h2 className="sub-title">Superstar Tutors At Your Fingertips</h2>
 			<form onSubmit={handleSubmit} >
 				<input name="email" className="email-sign-up" type="text" placeholder="email"></input>
